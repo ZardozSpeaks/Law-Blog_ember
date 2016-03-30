@@ -2,9 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return Ember.RSVP.hash({
-      articles: this.store.findAll('post'),
-    });
+    return this.store.findAll('post');
   },
   actions: {
     saveNewPost: function(params) {
@@ -16,5 +14,11 @@ export default Ember.Route.extend({
       this.store.createRecord('post', params).save();
       this.transitionTo('admin');
     },
+    deletePost(post) {
+      if(confirm("Are you sure you want to delete this content?")) {
+        post.destroyRecord();
+      }
+      this.transitionTo('admin');
+    }
   }
 });
