@@ -1,0 +1,12 @@
+{{#if post.comments}}
+  <hr>
+  <h4>User Comments</h4>
+
+  <ul>
+  {{#each post.comments as |comment|}}
+    <li>{{comment.username}}<br>{{comment.body}}</li>
+  {{/each}}
+  </ul>
+{{/if}}
+
+{{new-comment post=post addComment='addComment'}}
