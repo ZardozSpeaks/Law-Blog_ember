@@ -1,11 +1,31 @@
-<h4>
-  {{#link-to 'post' post.id}}
-    {{post.title}}
-  {{/link-to}}
+
+<div class="post">
+  <div class="title-line">
+    <div class="row">
+      <div class="col col-sm-4">
+        {{#link-to 'post' post.id}}
+        <h2>{{post.title}}</h2>
+        {{/link-to}}
+      </div>
+      <div class="col col-sm-7">
+
+      </div>
+      <div class="col col-sm-1">
+        <h4>{{post.time}}</h4>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div class="content">
+    <img src="{{post.image}}" alt="{{post.title}}" />
+    <p>{{post.content}}</p>
+  </div>
+
+
   {{#if admin}}
     {{#link-to 'update' post.id}}
       <button type="button">Update</button>
     {{/link-to}}
     <button {{action 'deletePost' post}}>Delete</button>
   {{/if}}
-</h4>
+</div>

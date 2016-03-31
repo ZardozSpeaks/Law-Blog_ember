@@ -1,7 +1,5 @@
 {{add-post saveNewPost='saveNewPost'}}
 
-<ul>
-  {{#each model as |post|}}
-    {{article-tile admin=admin post=post deletePost='deletePost'}}
-  {{/each}}
-</ul>
+{{#each model as |post|}}
+  {{article-tile admin=admin post=post deletePost='deletePost'}}
+{{/each}}

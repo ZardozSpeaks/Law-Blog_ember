@@ -1,0 +1,122 @@
+body {
+  font-family: 'Rozha One', serif;
+  background-color: lighten(#ADB1B4, 50%);
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #B7D1E2;
+}
+
+
+.page-header {
+  display: flex;
+  align-items: center;
+  margin: 0px;
+  padding: 0;
+  background-color: #05076B;
+  span {
+    padding-left: 1.5rem;
+    font-size: 4rem;
+    color: lighten(#ADB1B4, 25%);
+    width: auto;
+  }
+}
+
+
+.links {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-weight: bold;
+  font-size: 3rem;
+  p {
+    padding: 0 10px 0 20px;
+  }
+  a {
+    color: lighten(#ADB1B4, 25%);
+    text-decoration: none;
+  }
+}
+
+.index {
+  margin-top: 2rem;
+}
+
+.post {
+  .title-line {
+    .row {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+  }
+  .content {
+    width: 80%;
+    margin:auto;
+    min-height: 300px;
+    img {
+      float: left;
+      margin: 0 20px -10px 0;
+      max-width: 600px;
+    }
+    p {
+      font-size: 1.75rem;
+      display: block;
+      text-indent: 20px;
+      margin-top: 50px;
+    }
+  }
+  hr {
+    border-top: 2px solid #05076B;
+  }
+}
+
+.about {
+  margin-top: 3.5rem;
+  .content {
+    width: 80%;
+    margin:auto;
+    min-height: 300px;
+    img {
+      float: left;
+      margin: 0 20px -10px 0;
+      max-width: 600px;
+    }
+    p {
+      font-size: 1.75rem;
+      display: block;
+      text-indent: 20px;
+      margin-top: 30px;
+    }
+  }
+  hr {
+    border-top: 2px solid #05076B;
+  }
+}
+
+.contact {
+  margin-top: 3.5rem;
+  .content {
+    width: 80%;
+    margin:auto;
+    min-height: 300px;
+    img {
+      float: left;
+      margin: 0 20px -10px 0;
+      max-width: 600px;
+    }
+    p {
+      font-size: 1.75rem;
+      display: block;
+    }
+  }
+  hr {
+    border-top: 2px solid #05076B;
+  }
+}
