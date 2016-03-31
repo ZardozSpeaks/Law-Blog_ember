@@ -5,6 +5,7 @@
   <ul>
   {{#each post.comments as |comment|}}
     <li>{{comment.username}}<br>{{comment.body}}</li>
+    {{delete-comment deleteComment='deleteComment' comment=comment}}
   {{/each}}
   </ul>
 {{/if}}
