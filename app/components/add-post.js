@@ -15,6 +15,10 @@ export default Ember.Component.extend({
       };
       this.set('addNewPost', false);
       this.sendAction('saveNewPost', params);
+      this.set('title', ''),
+      this.set('author', ''),
+      this.set('content', ''),
+      this.set('image', '')
     }
   }
 });
