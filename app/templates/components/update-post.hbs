@@ -1,0 +1,10 @@
+<h4>Update {{post.title}}</h4>
+<div>
+  <form>
+    <label for="title">Title:</label>{{input value=post.title id="title"}}
+    <label for="author">author</label>{{input value=post.author id="author"}}
+    <label for="content">Content</label>{{input value=post.content id="content"}}
+    <label for="image">image</label>{{input value=post.image id="image"}}
+    <button {{action 'updatePost' post}}>Save</button>
+  </form>
+</div>
